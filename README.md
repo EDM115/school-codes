@@ -9,3 +9,18 @@
 - [Tout le python de l'année dernière](https://github.com/EDM115/school-codes/tree/main/Python/Premiere)
 - ⚠️ [Le Python de cette année (mis à jour chaque semaine/après chaque cours si j'y pense 🥲](https://github.com/EDM115/school-codes/tree/main/Python/Terminale)
 - [Le peu de SQL qu'on a fait](https://github.com/EDM115/school-codes/tree/main/SQL)
+- [Un peu de documentation si vous êtes perdus](https://github.com/EDM115/school-codes/tree/main/Documentation)
+
+---
+
+### Fichiers :
+- [Pyzo, Notepad++, Tigerjython](https://drive.google.com/file/d/1G6_Ce7OV33tgZM6BXP-stUSPIK6wIamR/view?usp=sharing)
+- [VS Code - édition normale](https://drive.google.com/file/d/19LrYxddXenjULlEAnv4o3p3FeRDQrOYf/view?usp=sharing)
+- [VS Code - édition Insiders](https://drive.google.com/file/d/1hodUfA7liWgKacl20E642jmGqSSbYZgY/view?usp=sharing)
+- [VS Code (ancienne version avec beacuoup de fichiers d'exemple et des librairies pré-installées)]()
+- [La dernière version de Python avec TOUT de pré-installé]()
+> Si vous avez des problèmes pour ouvrir ces archives, utilisez un de ces 2 logiciels :
+| [WinRar](https://drive.google.com/file/d/1Bh6RefFV-1TZewo4NpjaB-MC78AdcvqK/view?usp=sharing) | [PeaZip](https://drive.google.com/file/d/1BOPoIu6g-QLPRIqDpj0eoS4AFkH--j1d/view?usp=sharing) |
+
+---
+
