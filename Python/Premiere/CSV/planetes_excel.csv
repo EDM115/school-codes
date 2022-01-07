@@ -1,0 +1,10 @@
+nom;diamätre en km;planäte tellurique;distance au Soleil en UA;masse x 10^24 kg;gravitÇ en N/kg
+Mercure;4878;True;0,39;0,33;3,700123102
+VÇnus;12104;True;0,72;4,869;8,8668175
+Terre;12756;True;1;5,974;9,79539655
+Mars;6794;True;1,52;0,642;3,710818971
+Jupiter;142800;False;5,2;1900;24,85896319
+Saturne;120000;False;9,54;568;10,52377778
+Uranus;51120;False;19,18;86,8;8,861839092
+Neptune;49528;False;30,06;102;11,0939043
+;;;;;24,85896319
