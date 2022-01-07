@@ -1,0 +1,191 @@
+drop table if exists personnage;
+create table personnage (id integer, nom varchar(100), prenom varchar(100),primary key(id));
+insert into personnage values (1, 'Tintin', 'inconnu');
+insert into personnage values (2, 'Milou', 'sans');
+insert into personnage values (3, 'Haddock', 'Archibald');
+insert into personnage values (4, 'Dupond', 'inconnu');
+insert into personnage values (5, 'Dupont', 'inconnu');
+insert into personnage values (6, 'Tournesol', 'Tryphon');
+insert into personnage values (7, 'Lampion', 'Séraphin');
+insert into personnage values (8, 'Castafiore', 'Bianca');
+insert into personnage values (9, 'Rastapopoulous', 'Roberto');
+insert into personnage values (10, 'inconnu', 'Nestor');
+insert into personnage values (11, 'Thompson', 'Allan');
+insert into personnage values (12, 'da Figueira', 'Olivera');
+update personnage set prenom=nom where prenom='sans';
+update personnage set prenom=nom where prenom='inconnu';
+update personnage set nom=prenom where nom='inconnu';
+/*select * from personnage;
+select nom from personnage;
+select nom, prenom from personnage order by nom asc;
+Création de la table album grace au fichier .csv
+*/
+drop table if exists album;
+create table album (numero integer auto_increment, parution int,titre varchar(100),primary key(numero));
+insert into album(parution, titre) values (1930,'Tintin aux pays des soviets'),(1931,'Tintin au Congo'),(1932,'Tintin en Amérique'),(1934,'Les cigares du pharaon'),(1936,'Le lotus bleu'),(1937,'loreille cassé'),(1938,'Lîle noire'),(1939,'Le Sceptre dOttokar'),(1941,'Le crabe aux pinces dor'),(1942,'Létoile mystérieuse'),(1943,'Le secret de la Licorne'),(1944,'Le trésor de Rackham le Rouge'),(1948,'Les 7 boules de cristal'),(1949,'Le temple du soleil'),(1950,'Tintin au pays de lor noir'),(1953,'Objectif lune'),(1954,'On a marché sur la lune'),(1956,'Laffaire Tournesol'),(1958,'Coke en stock'),(1960,'Tintin au Tibet'),(1963,'Les bijoux de la Castafiore'),(1968,'Vol 714 pour Sydney');
+select * from album;
+
+/* c & d, correction d'une fautre grace à update ET ajout de deux albums oublié.
+*/
+update album set titre="L'oreille cassée" where titre='Loreille cassé';
+insert into album(parution, titre) values (1979,'Tintin et les Picaros');
+insert into album(parution, titre) values (1986,'Tintin et lAlphart');
+select titre,parution from album;
+select parution,titre from album;
+select parution,titre from album order by parution desc;
+
+/* En utilisant le Modèle Logique de Données, créer le champ 1ere_apparition dans la table personnage.
+*/
+ALTER TABLE personnage ADD 1ere_apparition int;
+
+
+
+/* Ajouter la clé étrangère 1ere_apparition avec le numéro de la table personnage.
+*/
+ALTER TABLE personnage ADD CONSTRAINT 1ere_apparition FOREIGN KEY (1ere_apparition) REFERENCES album(numero);
+
+
+
+/* Compléter le champ 1ere_apparition à la table personnage.
+*/
+update personnage set 1ere_apparition=1 where id=1;
+update personnage set 1ere_apparition=1 where id=2;
+update personnage set 1ere_apparition=9 where id=3;
+update personnage set 1ere_apparition=4 where id=4;
+update personnage set 1ere_apparition=4 where id=5;
+update personnage set 1ere_apparition=12 where id=6;
+update personnage set 1ere_apparition=18 where id=7;
+update personnage set 1ere_apparition=17 where id=8;
+update personnage set 1ere_apparition=3 where id=9;
+update personnage set 1ere_apparition=11 where id=10;
+update personnage set 1ere_apparition=4 where id=11;
+update personnage set 1ere_apparition=4 where id=12;
+select * from personnage;
+/*
+Afficher le nom des personnages et le titre de l'album où ils apparaissent pour la première fois
+*/
+select nom, titre
+from personnage
+join album on personnage.1ere_apparition=album.numero;
+
+
+
+/* Afficher le nom et la date où apparaissent la première fois le personnage
+*/
+select nom, parution
+from personnage
+join album on personnage.1ere_apparition=album.numero;
+
+/* Afficher les noms des personnages qui apparaissent pour la première fois en 1934
+*/
+select nom
+from personnage
+join album on personnage.1ere_apparition=album.numero
+where parution=1934;
+
+/*Afficher les noms et la date de d'apparition des personnages qui apparaissent la premiere fois avant 1940
+*/
+select personnage.nom, album.parution
+from personnage
+join album on personnage.1ere_apparition=album.numero
+where album.parution<1940 order by album.parution asc;
+
+/*Afficher les noms et la date d'apparition des personnages qui apparaissent la première fois entre 1940 et 1956
+*/
+select personnage.nom, album.parution
+from personnage
+join album on personnage.1ere_apparition=album.numero
+where album.parution>1940 and album.parution<1956;
+
+/*Afficher les noms et la date d'apparition des personnages qui apparaissent pour la première fois avant 1940 et après 1956
+*/
+select personnage.nom, album.parution
+from personnage
+join album on personnage.1ere_apparition=album.numero
+where album.parution<1940 or album.parution>1956;
+
+
+
+/* Création de la table apparaitre_dans grace au fichier .csv
+*/
+drop table if exists apparaitre_dans;
+create table apparaitre_dans (id_personnage integer auto_increment, num_album int,primary key(id_personnage, num_album));
+
+
+
+insert into apparaitre_dans values (1,1),(1,2),(1,3),(1,4),(1,5),(1,6),(1,7),(1,8),(1,9),(1,10),(1,11),(1,12),(1,13),(1,14),(1,15),(1,16),(1,17),(1,18),(1,19),(1,20),(1,21),(1,22),(1,23),(1,24),(2,1),(2,2),(2,3),(2,4),(2,5),(2,6),(2,7),(2,8),(2,9),(2,10),(2,11),(2,12),(2,13),(2,14),(2,15),(2,16),(2,17),(2,18),(2,19),(2,20),(2,21),(2,22),(2,23),(2,24),(3,9),(3,10),(3,11),(3,12),(3,13),(3,14),(3,15),(3,16),(3,17),(3,18),(3,19),(3,20),(3,21),(3,22),(3,23),(3,24),(4,2),(4,4),(4,5),(4,6),(4,7),(4,8),(4,9),(4,10),(4,11),(4,12),(4,13),(4,14),(4,15),(4,16),(4,17),(4,18),(4,19),(4,21),(4,23),(5,2),(5,4),(5,5),(5,6),(5,7),(5,8),(5,9),(5,10),(5,11),(5,12),(5,13),(5,14),(5,15),(5,16),(5,17),(5,18),(5,19),(5,21),(5,23),(6,12),(13,13),(13,14),(13,16),(13,17),(6,18),(6,19),(6,20),(6,21),(6,22),(6,23),(7,18),(7,19),(7,21),(7,22),(7,23),(8,8),(8,13),(8,18),(8,19),(8,21),(8,23),(8,24),(9,4),(9,5),(9,19),(9,22),(9,24),(10,11),(10,12),(10,13),(10,15),(10,16),(10,18),(10,19),(10,21),(10,23),(10,24),(11,4),(11,9),(11,19),(11,22),(12,4),(12,15),(12,19);
+select * from apparaitre_dans;
+
+
+
+/* En utilisant deux jointures internes, afficher la liste des personnages et des albums où ils apparaissent.
+*/
+select nom, prenom, titre
+from apparaitre_dans
+join album on apparaitre_dans.num_album=album.numero
+join personnage on apparaitre_dans.id_personnage=personnage.id;
+
+
+
+/* En utilisant deux jointures internes, afficher le titre des albums où apparait Nestor.
+*/
+select titre
+from apparaitre_dans
+join album on apparaitre_dans.num_album=album.numero
+join personnage on apparaitre_dans.id_personnage=personnage.id
+where personnage.prenom='Nestor';
+
+
+
+/* Créer, par sélection, la table nestor qui répertorie tous les albums où apparait Nestor
+*/
+drop table if exists nestor;
+create table nestor(nom_album varchar(100), primary key(nom_album));
+insert into nestor select titre
+from apparaitre_dans
+join album on apparaitre_dans.num_album=album.numero
+join personnage on apparaitre_dans.id_personnage=personnage.id
+where personnage.prenom='Nestor';
+select * from nestor;
+
+
+
+/* Faire de même avec Bianca Castafiore.
+*/
+drop table if exists castafiore;
+create table castafiore(nom_album varchar(100), primary key(nom_album));
+insert into castafiore select titre
+from apparaitre_dans
+join album on apparaitre_dans.num_album=album.numero
+join personnage on apparaitre_dans.id_personnage=personnage.id
+where personnage.nom='Castafiore';
+select * from castafiore;
+
+
+
+/*Afficher les titres communs à Nestor et Bianca Castafiore.
+*/
+select *
+from castafiore
+join nestor on castafiore.nom_album=nestor.nom_album
+where nestor.nom_album=castafiore.nom_album;
+
+
+
+/*Afficher les abums communs à Tournesol, Bianca Castafiore et Nestor.
+*/
+drop table if exists tournesol;
+create table tournesol(nom_album varchar(100), primary key(nom_album));
+insert into tournesol select titre
+from apparaitre_dans
+join album on apparaitre_dans.num_album=album.numero
+join personnage on apparaitre_dans.id_personnage=personnage.id
+where personnage.nom='Tournesol';
+select * from tournesol;
+/*Afficher les albums communs à Tournesol, Castafiore et Nestor.
+*/
+select *
+from castafiore
+join nestor on castafiore.nom_album=nestor.nom_album
+join tournesol on castafiore.nom_album=tournesol.nom_album
+where nestor.nom_album=castafiore.nom_album and tournesol.nom_album=castafiore.nom_album;
