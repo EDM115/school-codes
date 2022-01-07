@@ -27,3 +27,9 @@
     
 ---
 
+> Tutoriel sur comment bien installer VS Code : bientôt...  
+
+---
+
+Voilà, j'ajouterai plus de trucs après, là j'ai la flemme 😭
+Ah aussi, si vous dites "ouais gneugneu, tes liens ils marchent pas", vous allez [LÀ](https://groups.google.com/g/nsi-shared-files) et vous cliquez sur "Demander à rejoindre le groupe" (envoyez un message quelque part si j'ai pas accepté 😭 et voilàààààààà !
