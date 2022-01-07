@@ -1,0 +1,33 @@
+* { margin: 0 auto; text-align: center; }
+
+body { color: black; background-color: Silver; background-attachment: fixed; }
+
+h1 { color: Red; }
+
+h2 { color: #464646; }
+
+p { text-align: justify; text-indent: 3.5em; }
+
+p.sommaire { text-align: center; text-indent: 0; }
+
+.embed { clear: both; }
+
+div.principal { background-color: Gainsboro; border-style: ridge; border-width: 1.2px; border-color: black; border-radius: 55pt; width: 80%; padding: 2%; }
+
+a { text-decoration: none; color: DarkOrange; background-color: Gainsboro; transition: all 0.5s ease-in-out; }
+
+a.homepage { text-decoration: none; color: transparent; background-color: transparent; transition: none; }
+
+a.homepage:hover { text-decoration: none; color: transparent; background-color: transparent; transition: none; }
+
+a:hover { text-decoration: none; background-color: DarkOrange; color: DimGray; }
+
+img.logo { width: 80%; }
+
+input.pass/*:focus*/:valid { outline: 2px Lime solid; }
+
+input/*:focus*/:invalid { outline: 2px Red solid; }
+
+.invalid { outline: 2px Red solid; }
+
+input[required]:not(:valid) { outline: 2px DarkOrange solid; }

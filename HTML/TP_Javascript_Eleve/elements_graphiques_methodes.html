@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html >
+<html > 
+<head>
+    <title> Accueil</title>
+</head>
+<body>
+	<h1 align="center" >Eléments graphiques...</h1>
+	<div align="center" >
+	<h3>Zone de saisie uniligne</h3>
+	<input type="text" name="firstname" id="text1"  value="texte" size="30" onchange="myAction1()">// zone 30 caractères
+</br>
+<script>
+function myAction1() {
+ var x = document.getElementById("text1");  // on récupère la saisie par son identifiant
+ x.value="nouveau texte";  // pour modifier le texte dn
+ // le traitement
+}
+</script>
+<h3>Zone de saisie multiligne </h3>
+<textarea rows="4" cols="50" id="textarea1" onClick="alert('clic dans la saisie')">
+Le texte par défaut
+</textarea>
+<br>
+
+<h3>Case à cocher</h3>
+<input type="checkbox" id="checkbox1" onchange="isChecked()"> // case décochée par défaut checked=false
+<br>
+<script>
+function isChecked() {
+ var x = document.getElementById("checkbox1");
+ alert(x.checked);
+ return x.checked ; // on récupère si la case est cochée (true)  (false sinon)
+}
+</script>
+<h3> Radio-boutons</h3>
+<input type="radio" id="radio1"  name="toto" onclick="alert('modifié')">texte</input>
+<input type="radio" id="radio2"  name="toto" >texte</input>
+	<h3>Bouton</h3>
+<input type="button" id="button1" value="texte du bouton" onclick="myAction()" ></input>
+<br>
+<script>
+function myAction() {
+ var x = document.getElementById("text1"); 
+ var y = document.getElementById("motdepasse"); 
+alert(" zone texte : "+y.value+ "\n"+x.value);
+//le contenu de la zone de saisie
+}
+
+</script>
+<h3> Zone de saisie d'un mot de passe </h3>
+Password: <input type="password" id="motdepasse" name="pwd" maxlength="8" onchange="test()"><br>
+<script>
+function test() {
+ var x = document.getElementById("motdepasse"); 
+ if (x.value=="azer")
+		alert(" password correct");
+		else 
+		
+		alert(" passwort erronné"+x.value);
+//le contenu de la zone de saisie
+}
+</script>
+	
+
+	
+</div>
+</body>
+</html>

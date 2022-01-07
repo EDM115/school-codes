@@ -1,0 +1,77 @@
+
+body {
+    margin: 0;
+    padding:  0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ 
+canvas {
+    box-shadow: 0px 0px 30px rgba(0,0,0,0.3);
+    float: left;
+    border-radius: 6px;
+    display: block;
+	cursor: crosshair;
+}
+ 
+div {
+    font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    padding: 15px;
+    line-height: 30px;
+}
+ 
+#options {
+    float: left; padding: 40px;
+}
+ 
+div span {
+    float: left;
+    text-transform: uppercase;
+    padding: 0 20px 20px 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+ 
+div input {
+    float: left;
+    display: inline;
+}
+ 
+div input[type=range] {
+    position: relative;
+    top: 6px;
+}
+ 
+#boutons input[type=submit] {
+    border: 0;
+    border-radius: 4px;
+    margin-right: 10px;
+    width: 35px;
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.2);
+    height: 35px;
+    position: relative;
+    cursor: pointer;
+}
+ 
+#boutons input[type=submit]:hover {
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+}
+ 
+#boutons input[type=submit]:active {
+    top: 2px;
+}
+ 
+.purple { background: #871de0; }
+.pink { background: #eb159d; }
+.red { background: #ff0000; }
+.orange { background: #db551b; }
+.yellow { background: #f7ff3c; }
+.green { background: #39ff14; }
+.blue { background: #25fde9; }
+.black { background: #000; }
+.white { background: #fff; }
+ 
+#panneaux {
+    width: 710px;
+    margin: 0px auto;
+}

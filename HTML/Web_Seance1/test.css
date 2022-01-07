@@ -1,0 +1,7 @@
+﻿h1 { color: red; }
+body { background: linear-gradient(DimGray, Gainsboro);
+	width: fill-parent; 
+	height: fill-parent;
+	text-align: center; 
+	font-size: xx-large; }
+p { color: rgb(0F, 0F, 0F); }

@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="Telecran.css" />
+
+<title>Télécran</title>
+
+<script type="text/javascript" src="Telecran.js"></script>
+
+<script type="text/javascript">
+// Inhiber le scroll avec les touches fléchées !
+var ar=new Array(33,34,35,36,37,38,39,40);
+
+$(document).keydown(function(e) {
+     var key = e.which;
+      //console.log(key);
+      //if(key==35 || key == 36 || key == 37 || key == 39)
+      if($.inArray(key,ar) > -1) {
+          e.preventDefault();
+          return false;
+      }
+      return true;
+});
+</script>
+
+</head>
+<body onload=" init();">
+
+<center>
+<div id="pan">
+	<canvas id="telecran" width="690" height="500">
+		
+	</canvas>
+</div>
+</center>
+
+</body>
+</html>

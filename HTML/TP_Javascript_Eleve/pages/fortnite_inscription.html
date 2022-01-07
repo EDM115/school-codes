@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html >
+<html > 
+	<head>
+		<meta charset="utf-8">
+		<title>Inscription Fortnite</title>
+		<link rel="shortcut icon" type="image/jpg" href="../images/favicon.jpg"/>
+		<link rel="stylesheet" href="../style/style.css">
+		<script type="text/javascript" src="../scripts/test.js"></script>
+	</head>
+	
+	<body>
+	
+	<img src="../images/favicon.jpg">
+	
+	<div class="principal">
+		<h1>Configuration du compte Fortnite</h1></br></br>
+			<form method="post" action="../php/send.php">
+				
+					<label required="required" for="sel"><h2>Sélectionnez votre personnage :</h2></label><br>
+						<img src="../images/perso.png"></br>
+						<input type="radio" name="sel" value="p1"/>
+						<label>Personnage 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+						<input type="radio" name="sel" value="p2"/>
+						<label>Personnage 2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+						<input type="radio" name="sel" value="p3"/>
+						<label>Personnage 3</label><br><br>
+						
+					<label for="nom">Indiquez le nom de votre personnage : </label>
+					<input type="text" required="required" id="nom" name="nom" value="Nom/Pseudo" onfocus="if (value=='Nom/Pseudo') value='';"  onchange="affname()" /><br><br> <!--onchange="namecorrect()"-->
+				
+					<label for="local">Séléctionnez votre continent : </label>
+					<select required="required" id="local" name="local">
+						<option value="af">Afrique</option>
+						<option value="an">Amérique du Nord</option>
+						<option value="as">Amérique du Sud</option>
+						<option value="as">Asie</option>
+						<option value="eu">Europe</option>
+						<option value="oc">Océanie</option>
+					</select><br><br>
+					
+					<label required="required" for="next">Choisissez 2 capacités pour votre personnage : </label><br>
+						<input type="checkbox" name="in" value="in"/>
+						<label>Intelligence</label>&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="checkbox" name="ra" value="ra"/>
+						<label>Rapidité</label>&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="checkbox" name="fo" value="fo"/>
+						<label>Force</label>&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="checkbox" name="en" value="en"/>
+						<label>Endurance</label>&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="checkbox" name="pr" value="pr"/>
+						<label>Précision</label><br><br>
+					
+					<label for="pw">Saisissez un mot de passe (maximum 8 caractères) : </label>
+					<input class="pass" type="password" required="required" id="pw" name="pw" maxlength="8" placeholder="Saisissez votre mot de passe"/><br><br>
+					
+					<label for="pw2">Saisissez à nouveau votre mot de passe : </label>
+					<input class="pass" type="password" required="required" id="pw2" name="pw2" maxlength="8" placeholder="Répétez votre mot de passe"/ onchange="test()"><br><br>
+				
+				<input type="button" value="Envoyer &ldsh;" onclick="submit();"/>
+			</form>
+		</div>
+	</body>
+</html>

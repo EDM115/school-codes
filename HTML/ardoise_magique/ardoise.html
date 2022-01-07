@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+
+		<link rel="stylesheet" type="text/css" href="ardoise.css" />
+
+		<title>Ardoise magique</title>
+
+		<script type="text/javascript" src="ardoise.js"></script>
+
+	</head>
+<body onload="init();"><!-- initialisation de l'ardoise -->
+
+<div id="panneaux">
+	<div class="text" align="center"><!-- panneau de dessin -->
+		Ardoise magique
+	</div>
+	<canvas width="690" height="500" id="ardoise">
+	Votre navigateur ne supporte pas les canvas.
+	</canvas>
+	<div id="boutons"> <!-- panneau des boutons -->
+		<input type="submit" value="1px" onclick="changeSize(1);" /><br>
+		<input type="submit" value="2px" onclick="changeSize(2);" /><br>
+		<input type="submit" value="3px" onclick="changeSize(3);" /><br>
+		<input type="submit" value="5px" onclick="changeSize(5);" /><br>
+		<input type="submit" value="10px" onclick="changeSize(10);" /><br>
+		<input type="submit" value="20px" onclick="changeSize(20);" /><br>
+		<input type="submit" value="50px" onclick="changeSize(50);" /><br>
+		<input type="submit" value="100px" onclick="changeSize(100);" /><br>
+		<input type="submit" value="200px" onclick="changeSize(200);" /><br>
+		<input type="submit" value="ALL" onclick="changeSize(20000);" /><br>
+		<input type="submit" onclick="changeColor('#871de0');" class="purple" value=""/><br>
+		<input type="submit" onclick="changeColor('#eb159d');" class="pink" value=""/><br>
+		<input type="submit" onclick="changeColor('#c92626');" class="red" value=""/><br>
+		<input type="submit" onclick="changeColor('#db551b');" class="orange" value=""/><br>
+		<input type="submit" onclick="changeColor('#ddc41e');" class="yellow" value=""/><br>
+		<input type="submit" onclick="changeColor('#76b80f');" class="green" value=""/><br>
+		<input type="submit" onclick="changeColor('#1974b4');" class="blue" value=""/><br>
+		<input type="submit" onclick="changeColor('#000');" class="black" value=""/><br>
+		<input type="submit" onclick="changeColor('#fff');" class="white" value=""/><br>
+		<input type="image" onclick="changeForm('1');" class="carre" value="" src="carre.png"/>
+		<input type="image" onclick="changeForm('2');" class="carreplein" value="" src="carre_plein.png"/>
+		<input type="image" onclick="changeForm('3');" class="cercle" value="" src="cercle.png"/>
+		<input type="image" onclick="changeForm('4');" class="disque" value="" src="disque.png"/>
+		
+	</div>
+	
+	
+</div>
+</body>
+</html>
