@@ -17,10 +17,13 @@
 - [Pyzo, Notepad++, Tigerjython](https://drive.google.com/file/d/1G6_Ce7OV33tgZM6BXP-stUSPIK6wIamR/view?usp=sharing)
 - [VS Code - édition normale](https://drive.google.com/file/d/19LrYxddXenjULlEAnv4o3p3FeRDQrOYf/view?usp=sharing)
 - [VS Code - édition Insiders](https://drive.google.com/file/d/1hodUfA7liWgKacl20E642jmGqSSbYZgY/view?usp=sharing)
-- [VS Code (ancienne version avec beacuoup de fichiers d'exemple et des librairies pré-installées)]()
-- [La dernière version de Python avec TOUT de pré-installé]()
-> Si vous avez des problèmes pour ouvrir ces archives, utilisez un de ces 2 logiciels :
-| [WinRar](https://drive.google.com/file/d/1Bh6RefFV-1TZewo4NpjaB-MC78AdcvqK/view?usp=sharing) | [PeaZip](https://drive.google.com/file/d/1BOPoIu6g-QLPRIqDpj0eoS4AFkH--j1d/view?usp=sharing) |
+- [VS Code (ancienne version avec beacuoup de fichiers d'exemple et des librairies pré-installées)](https://drive.google.com/file/d/1ihaKVEkqMZBo4MEVUEPa4PlnGt_u7Mcu/view?usp=sharing)
+- [La dernière version de Python avec TOUT de pré-installé](https://drive.google.com/file/d/1TKTAEKZ5sAA9qd0soO5O19WIck08e1sE/view?usp=sharing)  
+``Si vous avez des problèmes pour ouvrir ces archives, utilisez un de ces 2 logiciels :``  
 
+    | WinRar | PeaZip |
+    | ----------- | ----------- |
+    | [DL WinRar](https://drive.google.com/file/d/1Bh6RefFV-1TZewo4NpjaB-MC78AdcvqK/view?usp=sharing) | [DL PeaZip](https://drive.google.com/file/d/1TKTAEKZ5sAA9qd0soO5O19WIck08e1sE/view?usp=sharing) |
+    
 ---
 
