@@ -1,7 +1,7 @@
 # 👨‍💻👩‍💻 school-codes
 ## On this repo, you'll find every codes I made during my NSI classes (informatical courses)
 \
-~~French for now since this repo is dedicated to my fellow school friends 🙂~~\
+~~French for now since this repo is dedicated to my fellow school friends 🙂~~
 
 ### Codes (sommaire) :
 - [Tous les fichiers d'exemple pour le HTML](https://github.com/EDM115/school-codes/tree/main/HTML)
