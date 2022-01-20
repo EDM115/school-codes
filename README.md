@@ -10,6 +10,7 @@
 - ⚠️ [Le Python de cette année (mis à jour chaque semaine/après chaque cours si j'y pense 🥲](https://github.com/EDM115/school-codes/tree/main/Python/Terminale)
 - [Le peu de SQL qu'on a fait](https://github.com/EDM115/school-codes/tree/main/SQL)
 - [Un peu de documentation si vous êtes perdus](https://github.com/EDM115/school-codes/tree/main/Documentation)
+- [Des épreuves des années précédentes](https://github.com/EDM115/school-codes/tree/main/%C3%89preuves)
 
 ---
 
