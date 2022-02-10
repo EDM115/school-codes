@@ -7,7 +7,7 @@
 - [Tous les fichiers d'exemple pour le HTML](https://github.com/EDM115/school-codes/tree/main/HTML)
 - [Ce qu'on avait vu en seconde sur le python 🤓](https://github.com/EDM115/school-codes/tree/main/Python/Seconde%20(oe%20la%20SNT))
 - [Tout le python de l'année dernière](https://github.com/EDM115/school-codes/tree/main/Python/Premiere)
-- ⚠️ [Le Python de cette année (mis à jour chaque semaine/après chaque cours si j'y pense 🥲](https://github.com/EDM115/school-codes/tree/main/Python/Terminale)
+- ⚠️ [Le Python de cette année (mis à jour chaque semaine/après chaque cours si j'y pense 🥲)](https://github.com/EDM115/school-codes/tree/main/Python/Terminale)
 - [Le peu de SQL qu'on a fait](https://github.com/EDM115/school-codes/tree/main/SQL)
 - [Un peu de documentation si vous êtes perdus](https://github.com/EDM115/school-codes/tree/main/Documentation)
 - [Des épreuves des années précédentes](https://github.com/EDM115/school-codes/tree/main/%C3%89preuves)
