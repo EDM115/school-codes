@@ -9,7 +9,7 @@ def affiche(pieces, rendu):
     for i in range (len(pieces)):
         if rendu[i]!=0:
             a.append(pieces[i], rendu[i])
-    print a
+    print(a)
 while s>0:
     if pieces[i]<=s and qte[i]!=0:
         s=s-pieces[i]
