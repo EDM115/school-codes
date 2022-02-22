@@ -20,6 +20,7 @@
 - [VS Code - édition Insiders](https://drive.google.com/file/d/1hodUfA7liWgKacl20E642jmGqSSbYZgY/view?usp=sharing)
 - [VS Code (ancienne version avec beacuoup de fichiers d'exemple et des librairies pré-installées)](https://drive.google.com/file/d/1ihaKVEkqMZBo4MEVUEPa4PlnGt_u7Mcu/view?usp=sharing)
 - [La dernière version de Python avec TOUT de pré-installé](https://drive.google.com/file/d/1TKTAEKZ5sAA9qd0soO5O19WIck08e1sE/view?usp=sharing)  
+- [L'installeur de VS Code 2022](https://drive.google.com/file/d/1jBy06mZSXap0OkCwzfn2HncEHHrOHf6d/view?usp=sharing)  
 ``Si vous avez des problèmes pour ouvrir ces archives, utilisez un de ces 2 logiciels :``  
 
     | WinRar | PeaZip |
