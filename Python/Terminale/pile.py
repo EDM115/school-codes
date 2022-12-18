@@ -16,7 +16,7 @@ def estPleine(tab):
     return pleine
 
 def empiler(tab, elt):
-    if estPleine(tab) != True:
+    if estPleine(tab) is not True:
         k = tab[0] + 1
         tab[k] = elt
         tab[0] = k
@@ -24,7 +24,7 @@ def empiler(tab, elt):
         print("pile pleine")
 
 def depiler(tab):
-    if estVide(tab) != True:
+    if estVide(tab) is not True:
         elt = tab[tab[0]]
         tab[0] = tab[0] - 1
         return elt
@@ -32,7 +32,7 @@ def depiler(tab):
         print("pile vide")
 
 def top(tab):
-    if estVide(tab) != True:
+    if estVide(tab) is not True:
         elt = depiler(tab)
         empiler(tab, elt)
         return elt
@@ -41,10 +41,10 @@ def top(tab):
 def taille(pile):
     n=0
     p=creerPileVide()
-    while estVide(pile)==False:
+    while estVide(pile) is False:
         n=n+1
         empiler(p, depiler(pile))
-    while estVide(p)==False:
+    while estVide(p) is False:
         empiler(pile, depiler(p))
 
 """ pile = creerPileVide(5)

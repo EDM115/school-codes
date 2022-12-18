@@ -12,7 +12,7 @@ class File :
         self.dernier_file = ...
 
     def est_vide(self) :
-        return self.dernier_file == None
+        return self.dernier_file is None
 
     def affiche(self) :
         maillon = self.dernier_file
@@ -22,12 +22,12 @@ class File :
 
     def defile(self) :
         if not self.est_vide() :
-            if self.dernier_file.suivant == None :
+            if self.dernier_file.suivant is None :
                 resultat = self.dernier_file.valeur
                 self.dernier_file = None
                 return resultat
             maillon = ...
-            while maillon.suivant.suivant != None :
+            while maillon.suivant.suivant is not None :
                 maillon = maillon.suivant
             resultat = ...
             maillon.suivant = None
