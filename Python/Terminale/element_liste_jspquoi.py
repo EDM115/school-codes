@@ -20,7 +20,8 @@ class Liste:
             return None
         return self.elt.cdr
 
-    def cons(self, element, liste):
+    @staticmethod
+    def cons(element, liste):
         if element is not None:
             element.cdr = Liste
             return Liste(element)

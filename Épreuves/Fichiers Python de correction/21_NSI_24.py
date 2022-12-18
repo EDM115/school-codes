@@ -8,12 +8,14 @@ class AdresseIP:
            la liste des octets de l'adresse IP"""
         return [int(i) for i in self.adresse.split(".")] 
 
-    def est_reservee(self):
+    @staticmethod
+    def est_reservee():
         """renvoie True si l'adresse IP est une adresse
            réservée, False sinon"""
         return ... or ...
 
-    def adresse_suivante(self):
+    @staticmethod
+    def adresse_suivante():
         """renvoie un objet de AdresseIP avec l'adresse 
            IP qui suit l’adresse self
            si elle existe et False sinon"""

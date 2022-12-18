@@ -76,7 +76,8 @@ class Paquet():
             tapis.create_image(x,y, image=img)
             y=d+y
 
-    def distribuer(self, joueur, n):
+    @staticmethod
+    def distribuer(joueur, n):
         joueur.append
 
     def vider(self):
