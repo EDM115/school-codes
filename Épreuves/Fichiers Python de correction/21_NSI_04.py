@@ -11,7 +11,7 @@ def dichotomie(tab, x):
     # cas où x n'est pas compris entre les valeurs extrêmes
     if (x < tab[0]) or ...:
         return False,2
-    
+
     debut = 0
     fin = len(tab) - 1
     while debut <= fin:

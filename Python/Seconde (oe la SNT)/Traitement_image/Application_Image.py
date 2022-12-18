@@ -21,8 +21,8 @@ def traitement(i):
   elif i==1:
     permuteRB()
 # associer le n° du bouton à son traitement
-    
-    
+
+
 
 
 
@@ -33,7 +33,7 @@ def traitement(i):
 
 # ne pas mofifier la ligne suivante 
   labelImage.setIcon(ImageIcon(imgF))
-  
+
 #********************************************* Les différents traitements ***************************************  
 
 
@@ -42,16 +42,16 @@ def traitement(i):
 def miroirH():
   global imgO,imgF,largeur,hauteur 
   imgF=BufferedImage(largeur,hauteur,BufferedImage.TYPE_INT_RGB)#déclaration des dimensions de l'image résultat et du type de codage de la couleur
-  
+
   for i in range(largeur):
    for j in range (hauteur):
       rgb=imgO.getRGB(largeur-1-i, j)
       imgF.setRGB(i,j,rgb)
-      
+
 def permuteRB():
   global imgO,imgF,largeur,hauteur 
   imgF=BufferedImage(largeur,hauteur,BufferedImage.TYPE_INT_RGB)#déclaration des dimensions de l'image résultat et du type de codage de la couleur
-  
+
   for i in range(largeur):
    for j in range (hauteur):
       rgb=imgO.getRGB(i, j)# récupération du code rgb du pixel (i,j)
@@ -59,7 +59,7 @@ def permuteRB():
       g=getGreen(rgb)# récupération de la composante verte du pixel (i,j)
       b=getBlue(rgb)# récupération de la composante bleue du pixel (i,j)
       imgF.setRGB(i,j,makeRGB(b,g,r)) # le pixel(i,j) prend la couleur créée avec makeRGB
-      
+
 #************************************************ Insérer ici vos différents traitements ***************************************************************
 
 
@@ -76,7 +76,7 @@ def permuteRB():
 #***************** Attention ne rien modifier dans les lignes suivantes *************************************  
 def makeRGB(r,g,b):
     return (r<<16)+(g<<8)+b
-    
+
 def getRed(rgb):
     return(rgb>>(16))&0xFF
 
@@ -102,7 +102,7 @@ def initialisation():
     f.contentPane.add(labelImage_,BorderLayout.WEST)
     f.contentPane.add(labelImage,BorderLayout.EAST)
     f.setVisible(True)
- 
+
 def readImage(filename): # fonction de lecture d'une image dont le nom est Filename. Cette retourne un objet de type Image
     global imgO
     e=None
@@ -142,7 +142,7 @@ def initBouton():
 
       if j==dimX: j=dimX-1
       cmd[i][j]= bouton
-      
+
 # Récupération du n° du bouton actif pour appliquer le traitement correspondant
 def action(event):
     i=event.getSource().getName()

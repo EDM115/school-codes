@@ -7,5 +7,5 @@ for i in range(4):
     for j in range(3):
         joe.forward(50)
         joe.right(120)
-    
+
 joe.hideTurtle()

@@ -5,7 +5,7 @@ def meilleures_notes():
     note_maxi = 0
     nb_eleves_note_maxi = ...
     liste_maxi =  ...
-    
+
     for compteur in range(...):
         if liste_notes[compteur] == ...:
             nb_eleves_note_maxi = nb_eleves_note_maxi + 1
@@ -14,5 +14,5 @@ def meilleures_notes():
             note_maxi = liste_notes[compteur]
             nb_eleves_note_maxi = ...
             liste_maxi = [...]
-            
+
     return (note_maxi,nb_eleves_note_maxi,liste_maxi)

@@ -1,7 +1,7 @@
 def creerFileVide(n):
     f = [None]*(n+1)
     f[0] = 0
- 
+
     return f
 
 def estPleine(f):

@@ -3,29 +3,29 @@
 class Tableau:
     #type_= int, bool, float, str, char
     Type={'int':'int','i':'int'}
-    
+
     def __init__(self,type_,taille):
         pass  
-    
+
     def getTypeStr(self):
         print( "<type 'array of "+str(self.n)+" "+self.type_+"'>")
-    
+
     def getType(self):
         pass  
-    
-    
+
+
     def getLen(self): 
         pass
-    
+
     def setElement(self,i,e):
         pass
-    
+
     def getElement(self,i):
         pass
-    
-   
-           
-    
+
+
+
+
 class IndexError(Exception):
     """Exception raised for errors in the input.
 
