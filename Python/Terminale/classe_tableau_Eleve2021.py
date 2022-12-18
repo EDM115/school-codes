@@ -3,7 +3,7 @@
 class Tableau:
     #type_= int, bool, float, str, char
     Type={'int':int, 'i':int, 'bool':bool, 'b':bool}
-    
+
     def __init__(self,type_,taille):
         if type_ in Tableau.Type:
             self.__type = Tableau.Type[type_]
@@ -11,16 +11,16 @@ class Tableau:
             self.__tab
         else:
             print("type non reconnu")
-    
+
     def getTypeStr(self):
         print("<type 'array of " + str(self.n) + " " + self.type_ + "'>")
-    
+
     def getType(self):
         return self.__type
-    
+
     def getLen(self):
         return len(self.__tab)
-    
+
     '''def setElement(self,i,e):
         print(type(e), "<type '"+str(self.__type)+"'>")
         if str(type(e))=="<type '"+str(self.__type)+"'>":
@@ -38,11 +38,11 @@ class Tableau:
 
     def __setItem__(self, i, elt):
         self.setElement(i, elt)
-    
+
     def getElement(self,i):
         if i > 0 and i < self.__taille:
             return self.__taille[i]
-    
+
     def __getItem__(self, i):
         return self.getElement(i)
 

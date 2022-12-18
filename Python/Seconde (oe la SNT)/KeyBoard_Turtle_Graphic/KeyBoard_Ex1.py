@@ -9,5 +9,5 @@ def onKeyPressed(code):
 def onKeyReleased(code):
     if code == KeyEvent.VK_LEFT:
        joe.setColor('orange') 
-    
+
 joe=makeTurtle(keyPressed=onKeyPressed,keyReleased=onKeyReleased)

@@ -6,25 +6,25 @@ class Element:
 class Liste:
     def __init__(self):
         self.elt = None
-    
+
     def estVide(self):
         return self.elt is None
-    
+
     def car(self):
         if self.estVide():
             return None
         return self.elt.car
-    
+
     def cdr(self):
         if self.estVide():
             return None
         return self.elt.cdr
-    
+
     def cons(self, element, liste):
         if element is not None:
             element.cdr = Liste
             return Liste(element)
-    
+
     def afficher(self):
         element = self.elt
         while element is not None:

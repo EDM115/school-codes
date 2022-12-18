@@ -10,10 +10,10 @@ for i in range(4) :
     else :
         joe.setColor(Color.green) 
         joe.setPenColor(Color.green) 
-    
+
     r =random.random()
     joe.forward(50)
-    
+
     if (r<0.5) :
         joe.right(90)
     else :

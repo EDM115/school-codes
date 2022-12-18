@@ -3,25 +3,25 @@ class Arbre:
 		self.noeud = valeur
 		self.fils_gauche = None
 		self.fils_droit = None
-		
+
 	def insere_fils_droit(self,fils):
 		self.fils_droit = fils
-		
+
 	def insere_fils_gauche(self,fils):
 		self.fils_gauche = fils
-		
+
 	def insere_noeud_droit(self, valeur):
 		self.fils_droit = Arbre(valeur)
-		
+
 	def insere_noeud_gauche(self, valeur):
 		self.fils_gauche = Arbre(valeur)
-	
+
 	def taille(self):
 		n = 1
 		for fils in self.fils:
 			n = n + fils.taille()
 		return n 
-		
+
 	def hauteur(self):
 		hmax = 1
 		if len(self.fils_gauche) != 0:
@@ -31,7 +31,7 @@ class Arbre:
 					hmax = h
 			hmax = hmax + 1
 		return hmax
-	
+
 	def nb_feuilles(self):
 		if len(self.fils) == 0:
 			n = 1
@@ -40,12 +40,12 @@ class Arbre:
 			for fils in self.fils:
 				n = n + fils.nb_feuilles()
 		return n
-	
+
 	def arite(self):
 		nmax = 0
 		# à compléter 
 		return nmax
-	
+
 	def largeur(self):
 		arbres = [self]
 		parcours = []
@@ -54,16 +54,16 @@ class Arbre:
 			# à compléter 
 			parcours.append(arbre.noeud)
 		return parcours
-	
+
 	def prefixe(self,parcours):
 		pass
 
 	def postfixe(self,parcours):
 		pass
-	
+
 	def infixe(self,parcours):
 		pass
-		
+
 	def recherche(self, x):
 		trouvé = False
 		if self.noeud is not None:
@@ -75,7 +75,7 @@ class Arbre:
 				else:
 					trouvé = self.fils_droit.recherche(x)
 		return trouvé
-	
+
 	def ajouter(self, x):
 		if self.noeud is not None:
 			if x < self.noeud:

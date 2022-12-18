@@ -9,7 +9,7 @@ def onMousePressed(x,y):
        joe.setColor('red') 
     else:
         joe.setColor('blue')
-    
+
 def onMouseReleased(x,y):
     if (y>0):
        joe.setColor('orange') 

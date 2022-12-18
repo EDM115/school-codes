@@ -7,7 +7,7 @@ def inverse_chaine(chaine):
 def est_palindrome(chaine):
     inverse = inverse_chaine(chaine)
     return ...
-    
+
 def est_nbre_palindrome(nbre):
     chaine = ...
     return est_palindrome(chaine)

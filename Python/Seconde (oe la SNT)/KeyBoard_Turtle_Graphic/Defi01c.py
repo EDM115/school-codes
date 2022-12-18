@@ -12,17 +12,17 @@ def onKeyPressed(code):
 def onKeyReleased(code):
     if code == KeyEvent.VK_LEFT:
        joe.setColor('orange') 
-       
+
 def carre():
     for i in range(4):
         joe.forward(50)
         joe.right(90) 
-        
+
 def triangle():
     for i in range(3):
         joe.forward(100)
         joe.right(120)
-        
+
 joe=makeTurtle(keyPressed=onKeyPressed,keyReleased=onKeyReleased)
 n=0
 while(True):
@@ -32,5 +32,5 @@ while(True):
     elif (n==2):
         triangle()
         n=0
-    
-    
+
+
