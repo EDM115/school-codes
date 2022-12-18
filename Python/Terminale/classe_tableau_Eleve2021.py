@@ -33,14 +33,14 @@ class Tableau:
             print("erreur de type")'''
 
     def setElement(self, i, elt):
-        if (isinstance(elt, self.__type)) and (0 <= i and i < self.__taille):
+        if (isinstance(elt, self.__type)) and (i >= 0 and i < self.__taille):
             self.__tab[i] = elt
 
     def __setItem__(self, i, elt):
         self.setElement(i, elt)
     
     def getElement(self,i):
-        if 0 < i and i < self.__taille:
+        if i > 0 and i < self.__taille:
             return self.__taille[i]
     
     def __getItem__(self, i):
