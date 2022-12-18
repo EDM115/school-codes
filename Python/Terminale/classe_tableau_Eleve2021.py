@@ -53,7 +53,6 @@ class IndexError(Exception):
         expression -- input expression in which the error occurred
         message -- explanation of the error
     """
-    pass
     """def __init__(self, message):
         #self.expression = expression
         if message==None:
