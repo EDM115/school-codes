@@ -28,8 +28,7 @@ def depiler(tab):
         elt = tab[tab[0]]
         tab[0] = tab[0] - 1
         return elt
-    else:
-        print("pile vide")
+    print("pile vide")
 
 def top(tab):
     if estVide(tab) is not True:

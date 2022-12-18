@@ -20,5 +20,4 @@ class AdresseIP:
         if ... < 254:
             octet_nouveau = ... + ...
             return AdresseIP('192.168.0.' + ...)
-        else:
-            return False
+        return False

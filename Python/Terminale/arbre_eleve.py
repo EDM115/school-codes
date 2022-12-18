@@ -55,22 +55,21 @@ class Arbre:
 		e=len(str(self.noeud))
 		if len(self.fils)==0: # le noeud est une feuille
 			return'-['+str(self.noeud)+']'
+		s='-['+str(self.noeud)+']'
+		d_=d
+		a=''
+		for e_ in range(e+3): # decalage pour que les noeuds de meme niveau soient alignes
+					a=a+' '
+		if len(self.fils)>1:
+			d=d+a+chr(124)
 		else:
-			s='-['+str(self.noeud)+']'
-			d_=d
-			a=''
-			for e_ in range(e+3): # decalage pour que les noeuds de meme niveau soient alignes
-						a=a+' '
-			if len(self.fils)>1:
-				d=d+a+chr(124)
-			else:
-				d=d+a+' ' #traitement particulier du 1er fils
-			s=s+'-'+self.fils[0].affiche(d)+'\n'
-			for i in range(1,len(self.fils)-1): # traitement des autres fils
-					s=s+d+self.fils[i].affiche(d)+'\n'
-			if len(self.fils)>1: # traitement particulier du dernier fils
-				s=s+d+self.fils[len(self.fils)-1].affiche(d_+a+' ')+'\n'
-			s=s+d[:-1]
+			d=d+a+' ' #traitement particulier du 1er fils
+		s=s+'-'+self.fils[0].affiche(d)+'\n'
+		for i in range(1,len(self.fils)-1): # traitement des autres fils
+				s=s+d+self.fils[i].affiche(d)+'\n'
+		if len(self.fils)>1: # traitement particulier du dernier fils
+			s=s+d+self.fils[len(self.fils)-1].affiche(d_+a+' ')+'\n'
+		s=s+d[:-1]
 		return s
 
 	def __repr__(self):
