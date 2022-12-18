@@ -68,7 +68,7 @@ class Arbre:
 		for i in range(1,len(self.fils)-1): # traitement des autres fils
 				s=s+d+self.fils[i].affiche(d)+'\n'
 		if len(self.fils)>1: # traitement particulier du dernier fils
-			s=s+d+self.fils[len(self.fils)-1].affiche(d_+a+' ')+'\n'
+			s=s+d+self.fils[-1].affiche(d_+a+' ')+'\n'
 		s=s+d[:-1]
 		return s
 
