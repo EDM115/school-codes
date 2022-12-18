@@ -5,7 +5,7 @@ joe=Turtle()
 for j in range(4):
     joe.forward(50)
     i =random.random()
-    if (i<0.5): 
+    if i<0.5: 
         joe.setColor(Color.red)
         joe.setPenColor(Color.red)
         joe.right(90)   

@@ -58,7 +58,7 @@ def decrypt(message):
     for letter in message:
 
         # checks for space
-        if (letter != ' '):
+        if letter != ' ':
 
             # counter to keep track of space
             i = 0

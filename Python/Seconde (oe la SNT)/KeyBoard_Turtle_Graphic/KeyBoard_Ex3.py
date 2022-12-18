@@ -23,13 +23,13 @@ joe=makeTurtle(keyPressed = onKeyPressed, keyReleased = onKeyReleased)
 # keyPressed = onKeyPressed:  
 # au mot clé keyPressed on associe la méthode onKeyPressed ci-dessus
 n=0
-while(True):
-    if (n==1):
+while True:
+    if n==1:
         joe.setColor('red')
         n=0
-    elif (n==2):
+    elif n==2:
         joe.setColor('blue')
         n=0
-    elif (n==3):
+    elif n==3:
         joe.setColor('orange')
         n=0

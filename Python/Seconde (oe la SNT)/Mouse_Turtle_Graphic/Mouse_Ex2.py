@@ -1,13 +1,13 @@
 from gturtle import *
 
 def onMousePressed(x,y):
-    if (isLeftMouseButton()):
+    if isLeftMouseButton():
        joe.setColor('red') 
     else:
         joe.setColor('blue')
 
 def onMouseReleased(x,y):
-    if (isRightMouseButton()):
+    if isRightMouseButton():
        joe.setColor('orange') 
 
 joe=makeTurtle(mousePressed = onMousePressed, mouseReleased=onMouseReleased)
