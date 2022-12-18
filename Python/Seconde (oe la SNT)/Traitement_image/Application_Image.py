@@ -1,8 +1,8 @@
 from  javax.imageio import ImageIO
+from javax.swing import JFrame, JPanel, JButton, JLabel, ImageIcon, Icon
 from  java.io import File,IOException
 from java.awt.image import BufferedImage
 from java.awt import Color,BorderLayout,GridLayout,Dimension,Insets
-from javax.swing import JFrame,JPanel,JButton,JLabel,ImageIcon,Icon
 # initialisation des variables globales
 #*********** PARTIE 1  *********** PARTIE 1  *********** PARTIE 1  *********** PARTIE 1 ***********
 msg=["miroirH","permuteRB"]
