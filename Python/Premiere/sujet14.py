@@ -1,6 +1,6 @@
 def recherche(elt, tab):
     search=[]
-    for i in range(len(tab)):
-        if elt==tab[i]:
+    for i, item in enumerate(tab):
+        if elt==item:
             search.append(i)
     return search

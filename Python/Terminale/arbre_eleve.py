@@ -95,8 +95,8 @@ class Arbre:
 			else:
 				i=i+1
 		s=''
-		for i in range(len(a)):
-			s=s+a[i]+'\n'
+		for i, item in enumerate(a):
+			s=s+item+'\n'
 		return s
 
 a=Arbre(1)
