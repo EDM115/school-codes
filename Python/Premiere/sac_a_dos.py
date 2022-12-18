@@ -2,8 +2,8 @@ objets = [(60, 8), (100, 20), (100, 60), (40, 20)]
 m_max = 60
 ratio = []
 m_sac = 0
-for i in range (len(objets)):
-    ratio.append((objets[i][0]/objets[i][1], i))
+for i, item in enumerate(objets):
+    ratio.append((item[0]/item[1], i))
 ratio.sort(reverse=True)
 solution = []
 i = 0

@@ -6,9 +6,9 @@ i=0
 c=0
 def affiche(pieces, rendu):
     a = []
-    for i in range (len(pieces)):
+    for i, item in enumerate(pieces):
         if rendu[i]!=0:
-            a.append(pieces[i], rendu[i])
+            a.append(item, rendu[i])
     print(a)
 while s>0:
     if pieces[i]<=s and qte[i]!=0:
