@@ -4,7 +4,7 @@ import random
 i =random.random()
 joe=Turtle()
 joe.forward(50)
-if (i<0.5) :
+if i<0.5 :
     joe.setColor('red')
     joe.setPenColor('red')
     joe.right(90)

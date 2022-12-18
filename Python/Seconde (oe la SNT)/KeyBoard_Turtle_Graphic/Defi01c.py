@@ -25,11 +25,11 @@ def triangle():
 
 joe=makeTurtle(keyPressed=onKeyPressed,keyReleased=onKeyReleased)
 n=0
-while(True):
-    if (n==1):
+while True:
+    if n==1:
         carre()
         n=0
-    elif (n==2):
+    elif n==2:
         triangle()
         n=0
 

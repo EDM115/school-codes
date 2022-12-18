@@ -127,7 +127,7 @@ def initBouton():
   for i in range(dimY):
       for j in range(dimX):
           k=i*dimX+j
-          if (k<len(msg)):
+          if k<len(msg):
             message=msg[k]# msg.length taille du tableau msg
           else:
             message=""
