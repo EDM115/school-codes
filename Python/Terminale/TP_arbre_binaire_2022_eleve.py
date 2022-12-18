@@ -41,7 +41,8 @@ class Arbre:
 				n = n + fils.nb_feuilles()
 		return n
 
-	def arite(self):
+	@staticmethod
+	def arite():
 		nmax = 0
 		# à compléter 
 		return nmax
