@@ -6,16 +6,10 @@ def creerFileVide(n):
 
 def estPleine(f):
     taille = len(f)-1
-    if f[0] == taille:
-        return True
-    else:
-        return False
+    return f[0] == taille
 
 def estVide(f):
-    if f[0] == 0:
-        return True
-    else:
-        return False
+    return f[0] == 0
 
 def enfiler(f, x):
     if estPleine(f) is False:
