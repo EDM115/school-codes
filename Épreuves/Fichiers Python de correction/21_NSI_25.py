@@ -9,7 +9,7 @@ def propager(M, i, j, val):
         propager(M, i-1, j, val)
 
     # l'élément en bas fait partie de la composante
-    if ((...) < len(M) and M[i+1][j] == 1):
+    if (len(M) > (...) and M[i+1][j] == 1):
         propager(M, ..., j, val)
 
     # l'élément à gauche fait partie de la composante
@@ -17,5 +17,5 @@ def propager(M, i, j, val):
         propager(M, i, ..., val)
 
     # l'élément à droite fait partie de la composante
-    if ((...) < len(M) and M[i][j+1] == 1):
+    if (len(M) > (...) and M[i][j+1] == 1):
         propager(M, i, ..., val)
