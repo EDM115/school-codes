@@ -116,9 +116,8 @@ class Arbre:
 			trouve = self.recherche(self.fils_gauche, self.noeud)
 			if trouve is False:
 				trouve = self.doublon(self.fils_gauche, self.noeud)
-		if trouve is False:
-			if self.fils_droit is not None:
-				trouve = self.doublon(self.fils_droit)
+		if trouve is False and self.fils_droit is not None:
+			trouve = self.doublon(self.fils_droit)
 		return trouve
 
 	def doublon_qui_marche(self, x):
@@ -127,9 +126,8 @@ class Arbre:
 			trouve2 = self.fils_gauche.recherche(x)
 			if trouve2 is False:
 				trouve2 = self.fils_gauche.doublon_qui_marche(self.fils_gauche.noeud)
-		if trouve2 is False:
-			if self.fils_droit is not None:
-				trouve2 = self.fils_droit.doublon_qui_marche(self.fils_droit.noeud)
+		if trouve2 is False and self.fils_droit is not None:
+			trouve2 = self.fils_droit.doublon_qui_marche(self.fils_droit.noeud)
 		return trouve2
 
 	def suppr2(self, x, a):
