@@ -66,7 +66,7 @@ class Arbre:
 		
 	def recherche(self, x):
 		trouvé = False
-		if self.noeud != None:
+		if self.noeud is not None:
 			if x == self.noeud:
 				trouvé = True
 			else:
@@ -77,14 +77,14 @@ class Arbre:
 		return trouvé
 	
 	def ajouter(self, x):
-		if self.noeud != None:
+		if self.noeud is not None:
 			if x < self.noeud:
-				if self.fils_gauche != None:
+				if self.fils_gauche is not None:
 					self.ajouter(x, self.fils_gauche)
 				else:
 					self.insere_fils_gauche(x)
 			else:
-				if self.fils_droit != None:
+				if self.fils_droit is not None:
 					self.ajouter(x, self.fils_droit)
 				else:
 					self.insere_fils_droit(x)
@@ -99,11 +99,11 @@ class Arbre:
 				self.suppr_via_max(self.fils_droit, x)
 			else:
 				if x == self.noeud:
-					if self.fils_droit != None:
+					if self.fils_droit is not None:
 						self.noeud = self.noeud.fils_droit
 						self.suppr_via_max(self.noeud, self.noeud.fils_droit)
 					else:
-						if self.fils_gauche != None:
+						if self.fils_gauche is not None:
 							self.noeud = self.noeud.fils_gauche
 							self.suppr_via_max(self.noeud, self.noeud.fils_gauche)
 						else:
@@ -111,30 +111,30 @@ class Arbre:
 
 	def doublon(self):
 		trouve = False
-		if self.fils_gauche != None:
+		if self.fils_gauche is not None:
 			trouve = self.recherche(self.fils_gauche, self.noeud)
-			if trouve == False:
+			if trouve is False:
 				trouve = self.doublon(self.fils_gauche, self.noeud)
-		if trouve == False:
-			if self.fils_droit != None:
+		if trouve is False:
+			if self.fils_droit is not None:
 				trouve = self.doublon(self.fils_droit)
 		return trouve
 
 	def doublon_qui_marche(self, x):
 		trouve2 = False
-		if self.fils_gauche != None:
+		if self.fils_gauche is not None:
 			trouve2 = self.fils_gauche.recherche(x)
-			if trouve2 == False:
+			if trouve2 is False:
 				trouve2 = self.fils_gauche.doublon_qui_marche(self.fils_gauche.noeud)
-		if trouve2 == False:
-			if self.fils_droit != None:
+		if trouve2 is False:
+			if self.fils_droit is not None:
 				trouve2 = self.fils_droit.doublon_qui_marche(self.fils_droit.noeud)
 		return trouve2
 
 	def suppr2(self, x, a):
 		if self.noeud == x:
-			if self.fils_gauche==None:
-				if self.fils_droit==None:
+			if self.fils_gauche is None:
+				if self.fils_droit is None:
 					self.noeud = self.fils_droit.noeud
 					self.fils_gauche = self.fils_droit.fils_gauche
 					self.fils_droit = self.fils_droit.fils_droit
@@ -144,7 +144,7 @@ class Arbre:
 					else:
 						a.self.fils_gauche = None
 			else:
-				if self.fils_droit == None:
+				if self.fils_droit is None:
 					self.noeud = self.fils_gauche.fils_noeud
 					self.fils_gauche = self.fils_gauche.fils_gauche
 					self.fils_droit = self.fils_gauche.fils_droit
@@ -153,10 +153,10 @@ class Arbre:
 					self.noeud = m
 					self.fils_droit.suppr2(m.self)
 		elif self.noeud > x:
-			if self.fils_gauche != None:
+			if self.fils_gauche is not None:
 				self.fils_gauche.suppr2(x, self)
 		else:
-			if self.fils_droit != None:
+			if self.fils_droit is not None:
 				self.fils_droit.suppr2(x, self)
 
 	def supprime(self, x):

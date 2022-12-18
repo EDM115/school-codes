@@ -8,7 +8,7 @@ class Liste:
         self.elt = None
     
     def estVide(self):
-        return self.elt == None
+        return self.elt is None
     
     def car(self):
         if self.estVide():
@@ -21,14 +21,14 @@ class Liste:
         return self.elt.cdr
     
     def cons(self, element, liste):
-        if element != None:
+        if element is not None:
             element.cdr = Liste
             return Liste(element)
     
     def afficher(self):
         element = self.elt
-        while element != None:
-            if element.cdr != None:
+        while element is not None:
+            if element.cdr is not None:
                 element = element.cdr.elt
             else:
                 element = None

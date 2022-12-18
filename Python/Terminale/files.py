@@ -18,7 +18,7 @@ def estVide(f):
         return False
 
 def enfiler(f, x):
-    if estPleine(f) == False:
+    if estPleine(f) is False:
         q = f[0]
         f[q+1] = x
         f[0] = q+1
@@ -26,7 +26,7 @@ def enfiler(f, x):
         print("file pleine")
 
 def defiler(f):
-    if estVide(f) == False:
+    if estVide(f) is False:
         x = f[1]
         q = f[0]
         f[0] = q-1

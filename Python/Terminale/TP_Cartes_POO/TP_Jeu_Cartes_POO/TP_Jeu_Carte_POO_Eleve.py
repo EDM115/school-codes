@@ -150,7 +150,7 @@ tapis_carte1_ = None; tapis_carte2_ = None # cartes abattues sur le tapis
 def jouer():
     global on,tapis_carte1_,tapis_carte2_
 
-    if tapis_carte1_!=None: # on efface les cartes abattues precedentes
+    if tapis_carte1_ is not None: # on efface les cartes abattues precedentes
         tapis_vert.delete(tapis_carte1_)
         tapis_vert.delete(tapis_carte2_)
 
@@ -158,14 +158,14 @@ def jouer():
         carte1 = joueur1.jouer_carte() # carte jouee par le joueur 1
         carte2 = joueur2.jouer_carte()
 
-        if carte1 != None and carte2 != None:
+        if carte1 is not None and carte2 is not None:
             tapis_carte1_ = carte1.afficher_carte(tapis_vert,300,300)
             tapis_carte2_ = carte2.afficher_carte(tapis_vert,500,300)
             ramasser(carte1,carte2)
         else:# cas ou la main d'un joueur est vide
             on=False
 
-            if carte1 == None:
+            if carte1 is None:
                 print("joueur2 gagnant")
             else:
                 print("joueur1 gagnant")
