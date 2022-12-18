@@ -49,9 +49,7 @@ class Arbre:
 		pass
 
 	def affiche(self,d):
-		"""
-		Fonction recursive qui renvoie l'arbre sous forme de chaine de caracteres
-		"""
+		"""Fonction recursive qui renvoie l'arbre sous forme de chaine de caracteres"""
 		e=len(str(self.noeud))
 		if len(self.fils)==0: # le noeud est une feuille
 			return'-['+str(self.noeud)+']'
