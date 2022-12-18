@@ -47,6 +47,6 @@ while GURU.get_vie()>0 or BUlly.get_vie()>0:
     if GURU.get_vie()==0:
         print ("fin du combat, BUlly gagne")
         break
-    elif BUlly.get_vie()==0:
+    if BUlly.get_vie()==0:
         print ("fin du combat, GURU gagne")
         break
